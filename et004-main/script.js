@@ -157,11 +157,10 @@ Tone.loaded().then(function () {
     playToggle.disabled = false;
     enableElements();
     loadPreset(0);
-
-
 });
 
 function loadPreset(index) {
+
     const preset = presets[index];
     for (var i = 0; i < parts.length ; i++) {
         parts[i].loop = preset[i] ?? 0;
@@ -178,7 +177,7 @@ async function presetLoaded() {
 
 function render() {
     console.log("Download")
-    status.innerHTML = "Render"
+    // status.innerHTML = "Render"
     const renderingPromise = Tone.Offline(({ transport }) => {
         transport.bpm.value = bpm;
 
@@ -282,6 +281,8 @@ function previewProgress() {
 
 
 playToggle.onclick = function () {
+
+    console.log("CLICKED");
     //---- START ----
     //when using the visualizer remove this comment and use pts.js play for the audio
     //startVisualizer();

@@ -103,9 +103,9 @@
     background-image: var(--img-bg);
     background-size: cover;
     background-position: center;
-    height: auto;
+    height: 300px;
     width: 100vw;
-    height: 100vh;
+
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -115,7 +115,7 @@
     /* min-height: 725px; */
     align-content: center;
     /* justify-content: flex-start; */
-    min-height: 100vh;
+    /* min-height: 100vh; */
     min-width: 100vw;
     display: flex;
       align-items: center;
@@ -865,7 +865,7 @@
     align-items: center;
     position: relative;
     width: 300px;
-    justify-content: center;
+    justify-content: space-around;
     flex-direction: row;
     align-content: center;
     margin-top: 10px;

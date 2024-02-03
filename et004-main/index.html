@@ -73,7 +73,7 @@ _\/\\\///////////____/\\\/////////\\\_\///////\\\/////___________________/\\\///
 </head>
 <body id="body">
 
-  <button id="flipMe" onclick="toggle()"></button>
+  <button id="flipMe" onclick="toggle()" style="display:none"></button>
   <button id="flipMe_return_direx" onclick="toggle()"></button>
   <div id="circle" loop=infinite ></div>
   <div id="stageBlock"></div>
@@ -130,7 +130,7 @@ _\/\\\///////////____/\\\/////////\\\_\///////\\\/////___________________/\\\///
         </div>
       </div>
 
-      <div id="cont_slider_boxes" style="position: relative;">
+      <div id="cont_slider_boxes" style="position: relative; display:none;">
         <div id="slider_cont">
           <div id="slider_bg"></div>
           <div id="slider"></div>
@@ -158,11 +158,11 @@ _\/\\\///////////____/\\\/////////\\\_\///////\\\/////___________________/\\\///
           </div>
           <div id="status">Loading...</div>
           <div id="totalDuration"></div>
-          <div class="repeat-container">
+          <div class="repeat-container" style="display:none">
             <div id="trackRepeat" style="color:white;" class="repeat master_repeat">1</div>
             <p  style="color:white;" class="repeat-text master_repeat">Loop</p>
           </div>
-          <div class="loopinteract">
+          <div class="loopinteract" style="display:none">
             <button id="masterUp" class="up loopinteraction" data-index="99"></button>
             <button id="masterDown" class="down loopinteraction" data-index="99"></button>
           </div>
